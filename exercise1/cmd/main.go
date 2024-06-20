@@ -1,9 +1,9 @@
 package main
 
 import (
-	libconf "example.com/m/v2/exercise1/lib/config"
-	libquiz "example.com/m/v2/exercise1/lib/quiz"
-	pkglog "example.com/m/v2/pkg/log"
+	libconf "github.com/Nikitastarikov/practice-on-golang/exercise1/lib/config"
+	libquiz "github.com/Nikitastarikov/practice-on-golang/exercise1/lib/quiz"
+	pkglog "github.com/Nikitastarikov/practice-on-golang/pkg/log"
 )
 
 func main() {

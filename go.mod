@@ -1,4 +1,4 @@
-module example.com/m/v2
+module github.com/Nikitastarikov/practice-on-golang
 
 go 1.22.4
 

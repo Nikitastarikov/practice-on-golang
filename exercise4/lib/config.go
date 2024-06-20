@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/viper"
 
-	pkgerr "example.com/m/v2/pkg/error"
+	pkgerr "github.com/Nikitastarikov/practice-on-golang/pkg/error"
 )
 
 type Config struct {

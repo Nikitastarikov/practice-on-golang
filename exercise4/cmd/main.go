@@ -1,8 +1,8 @@
 package main
 
 import (
-	libconf "example.com/m/v2/exercise4/lib"
-	pkglog "example.com/m/v2/pkg/log"
+	libconf "github.com/Nikitastarikov/practice-on-golang/exercise4/lib"
+	pkglog "github.com/Nikitastarikov/practice-on-golang/pkg/log"
 )
 
 func main() {
