@@ -3,11 +3,12 @@ package libquiz
 import (
 	"bufio"
 	"encoding/csv"
-	pkglog "example.com/m/v2/pkg/log"
 	"os"
 	"strconv"
 	"strings"
 	"time"
+
+	pkglog "github.com/Nikitastarikov/practice-on-golang/pkg/log"
 )
 
 type QuizGame struct {
