@@ -10,6 +10,7 @@ func main() {
 	conf := libconf.Get()
 	l := pkglog.Get()
 
+	//Синхронизация очищает все буферизованные записи журнала.
 	defer l.Sync()
 
 	err := conf.Print()

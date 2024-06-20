@@ -6,12 +6,19 @@ import (
 
 	"github.com/spf13/viper"
 
-	pkgerr "github.com/Nikitastarikov/practice-on-golang/pkg/error"
+	pkgerr "example.com/m/v2/pkg/error"
 )
 
 type Config struct {
-	FileCSVPaths []string `mapstructure:"file_csv_paths"`
-	TimeToThink  int      `mapstructure:"time_to_think"`
+	Psql Psql `mapstructure:"psql"`
+}
+
+type Psql struct {
+	Host     string `mapstructure:"host"`
+	Port     string `mapstructure:"port"`
+	User     string `mapstructure:"user"`
+	Password string `mapstructure:"password"`
+	Dbname   string `mapstructure:"dbname"`
 }
 
 var (
@@ -21,7 +28,7 @@ var (
 
 func Get() *Config {
 	onceConfig.Do(func() {
-		viper.AddConfigPath("exercise1/configs")
+		viper.AddConfigPath("exercise4/configs")
 		viper.SetConfigName("config")
 
 		if err := viper.ReadInConfig(); err != nil {
@@ -52,11 +59,9 @@ func (c *Config) Print() error {
 		return pkgerr.ErrConfigIsNil
 	}
 
-	fmt.Printf("files example:\n")
+	fmt.Printf("Config print:\n")
+	fmt.Printf("Psql:\n%v", c.Psql)
 
-	for _, f := range c.FileCSVPaths {
-		fmt.Printf("%v\n", f)
-	}
 	fmt.Println()
 
 	return nil
