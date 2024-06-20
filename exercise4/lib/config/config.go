@@ -1,4 +1,4 @@
-package libconf
+package config
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 )
 
 type Config struct {
-	Psql Psql `mapstructure:"psql"`
+	Psql *Psql `mapstructure:"psql"`
 }
 
 type Psql struct {

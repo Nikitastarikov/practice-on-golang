@@ -1,7 +1,9 @@
 psql:
-  host: localhost
-  port: 5432
-  user: postgres
-  password: psql123
-  dbname: calhounio_demo
+  #  url: postgres://postgres:psql123@localhost:5436/calhounio_demo?sslmode=disable
+  #  name: calhounio_demo
+  host: localhost # хост, к которому надо подключится
+  port: 5436 # порт для привязки
+  user: postgres # пользователь для входа в систему
+  password: psql123 # пароль пользователя
+  dbname: calhounio_demo # имя базы данных
 

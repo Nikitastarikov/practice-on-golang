@@ -22,4 +22,4 @@ services:
       - ./config/psql/init.sql:/docker-entrypoint-initdb.d/init.sql
       - psql-data:/var/lib/postgresql/data
     networks:
-      - richbay
+      - exercise4
