@@ -23,3 +23,5 @@ log
 # Go workspace file
 go.work
 
+_local
+
